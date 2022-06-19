@@ -29,7 +29,7 @@ public class PacienteController {
     @GetMapping(value = "/leves/{id}/delete")
     public String delete(@PathVariable Long id){
         this.pacienteService.deleteById(id);
-        return "redirect:/leves";
+        return "redirect:http://localhost:9000/LEVES/leves";
     }
     
 
